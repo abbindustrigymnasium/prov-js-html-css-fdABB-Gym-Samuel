@@ -5,10 +5,21 @@
     <title>Fråga 9</title>
 </head>
 
+
 <body>
     <!-- Här ska din HTML kod vara -->
+     <input type="text" id="adress">
+     <button onclick="showImage()">Show image</button>
+     <img src="" alt="" id="bild">
 
     <script>
+        function showImage(){
+            let image_adress = document.getElementById("adress").value
+            let image_container = document.createElement("img")
+            document.getElementById("bild").src = image_adress
+
+            
+        }
         // Här ska din JavaScript kod vara
 
 
